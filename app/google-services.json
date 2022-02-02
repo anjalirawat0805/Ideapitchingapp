@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "117178008730",
+    "project_id": "idea-pitching-app",
+    "storage_bucket": "idea-pitching-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117178008730:android:b2b7c9f38fed789007cb23",
+        "android_client_info": {
+          "package_name": "com.example.ideapitchingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117178008730-j6a43j5ta83dvtnmvohehfmffjrshch7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8wuz_pfgUrgZGALy5s4i_g4z42eeOlCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117178008730-j6a43j5ta83dvtnmvohehfmffjrshch7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

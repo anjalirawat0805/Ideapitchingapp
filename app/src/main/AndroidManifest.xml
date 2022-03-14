@@ -13,19 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ideapitchingapp">
         <activity
+            android:name=".EditIdeaActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddIdeaActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false" />
+        android:name=".RegistrationActivity"
+        android:exported="false" />
         <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

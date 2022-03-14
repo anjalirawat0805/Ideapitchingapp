@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_shade_1"
-    tools:context=".AddIdeaActivity">
+    tools:context=".EditIdeaActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            <!-- ADD IDEA NAME -->
+            <!-- EDIT IDEA NAME -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout"
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- ADD IDEA USER NAME -->
+            <!-- EDIT IDEA USER NAME -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout"
                 android:layout_width="match_parent"
@@ -67,7 +67,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- ADD IDEA USER CONTACT INFO -->
+            <!-- EDIT IDEA USER CONTACT INFO -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout"
                 android:layout_width="match_parent"
@@ -92,7 +92,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- ADD IDEA IMAGE LINK-->
+            <!-- EDIT IDEA IMAGE LINK-->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout"
                 android:layout_width="match_parent"
@@ -117,7 +117,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- ADD IDEA DESCRIPTION -->
+            <!-- EDIT IDEA DESCRIPTION -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout"
                 android:layout_width="match_parent"
@@ -142,17 +142,39 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:id="@+id/idBtnAddIdea"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
-                android:text="Add Idea"
-                android:textAllCaps="false"
-                android:background="@drawable/custom_button_back"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/idBtnUpdateIdea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_button_back"
+                    android:text="Update \nIdea"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/idBtnDeleteIdea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/custom_button_back"
+                    android:text="Delete \nIdea"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -34,6 +34,7 @@ public class RegistrationActivity extends AppCompatActivity {
         cnfPwdEdt = findViewById(R.id.idEdtCnfPwd);
         registerBtn = findViewById(R.id.idBtnRegister);
         loadingPB = findViewById(R.id.idPBLoading);
+        loginTV = findViewById(R.id.idTVLogin);
         mAuth = FirebaseAuth.getInstance();
         loginTV.setOnClickListener(new View.OnClickListener() {
             @Override

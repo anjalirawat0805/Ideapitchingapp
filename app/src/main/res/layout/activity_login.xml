@@ -7,14 +7,29 @@
     android:background="@color/blue_shade_1"
     tools:context=".LoginActivity">
 
+
+    <TextView
+        android:id="@+id/idLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center_horizontal"
+        android:text="Login "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
     <!-- UserName -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idTILUserName"
         style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/idLogin"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="28dp"
         android:hint="Enter User Name"
         android:padding="5dp"
@@ -91,7 +106,8 @@
         android:id="@+id/idPBLoading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_above="@+id/idTILUserName"
+        android:layout_marginBottom="110dp"
         android:indeterminate="true"
         android:indeterminateDrawable="@drawable/progress_bar"
         android:visibility="gone" />

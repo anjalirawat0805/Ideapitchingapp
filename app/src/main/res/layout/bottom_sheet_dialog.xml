@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idRLBSheet"
+    android:background="@color/blue_shade_1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Idea Name"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:id="@+id/idTVIdeaName"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/idTVIdeaName"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:id="@+id/idIVIdea"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVDescription"
+        android:layout_below="@id/idTVIdeaName"
+        android:textColor="@color/white"
+        android:text="Description"
+        android:layout_toRightOf="@id/idIVIdea"
+        android:layout_margin="4dp"
+        android:padding="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVContactInfo"
+        android:layout_below="@id/idTVDescription"
+        android:textColor="@color/white"
+        android:text="Contact Info"
+        android:layout_toRightOf="@id/idIVIdea"
+        android:layout_margin="4dp"
+        android:padding="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTVUser"
+        android:layout_below="@id/idTVContactInfo"
+        android:textColor="@color/white"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/idIVIdea"
+        android:layout_margin="4dp"
+        android:padding="3dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/idIVIdea"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            android:text="Edit Idea"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/idBtnEdit"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
